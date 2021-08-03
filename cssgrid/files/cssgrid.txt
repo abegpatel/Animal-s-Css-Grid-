@@ -1,0 +1,57 @@
+resources
+https://grid.malven.co/
+
+wrap with in a class container
+ <div class="container">
+    <div class="zone green">🦊</div>
+    <div class="zone red">🐰</div>
+    <div class="zone blue">🐸</div>
+    <div class="zone yellow">🦁</div>
+    <div class="zone purple">🐯</div>
+    <div class="zone brown">🐭</div>
+    <div class="zone green">🦄</div>
+    <div class="zone red">🐲</div>
+    <div class="zone blue">🐷</div>
+    <div class="zone yellow">🐺</div>
+    <div class="zone purple">🐼</div>
+    <div class="zone brown">🐻</div>
+</div>
+.container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:1fr 1fr 2fr;//grid-template-columns:repeat(3,1fr);//grid-template-columns:auto 1fr 2fr;
+    grid-template-rows:1fr 2fr ;//responsive row                            auto used for automatically scale the available space
+    justify-items: start;    //align the item in a row axis //horizontally
+    align-items: flex-start;//align the item in a col axis//vertically                   
+}
+use fr insted of piexel and percentage --it makes more responsive
+completely responsive**
+grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+    grid-template-rows:1fr;
+-total no of spaces for 1 item
+if screen 1 2 3 4 spaces the 1 2 3 spaces contain by single item
+green{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+stretchable for minimizer screen responsive 
+grid-column: 1/4;
+grid-column: 1/-1;//all the way to the end
+grid-column: span 2//span 3
+insted of
+grid-column-start: 1;
+    grid-column-end: 3;
+
+justify-items-col//start end
+Align-items-row
+
+justify-self-col
+align-self-row
+
+
+
+
+
+
+
+
